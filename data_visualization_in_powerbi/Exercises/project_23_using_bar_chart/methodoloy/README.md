@@ -1,0 +1,1 @@
+The product had overe 11K euro in sales revenue and falls in to the "Hoodie & Sweatshirts" category. The visual will allow the product manager to identify suitable new female products for supermarkets in the future
