@@ -1,0 +1,7 @@
+1. Import the northwind_employees.csv file into power query from the datasets folder on the desktop
+2. Perform a left join on the total sales query with the Employees query using EmployeeID as the common column in both tables
+3. Expand the Employees column to include the Name and ReportsTo columns from the Employees query
+- Make sure to uncheck "Use original column Name as prefix"
+4. Perform another left join between the Total Sales and Employee queries
+  This time joining the ReportsTo column in the Total Sales query with the employeeID column in the Employees table
+5. Expand the Employees column to include Name. Rename Name.1 column to Manager Name
