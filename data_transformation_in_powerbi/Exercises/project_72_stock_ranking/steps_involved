@@ -1,0 +1,6 @@
+1. Expand the Grouped column, selecting all columns except the CategoryName colum. Make sure to unselect 'Use original column name as prefix'
+2. Add a Custom Column that calculates the total amount of UnitsInStock and UnitsOnOrder. Name the column StockPlusOrdered
+3. Add another Custom Column that calculates the total value of the StockPlusOrdered column using the UnitPrice. Name this column StockPlusOrderValue.
+4. Add a Custom Column called IsBackordered which evaluates whether any of the products in the top category(categoryStockRank = 1) are on backorder.
+  A product is ojn backorder if the StockPlusOrdered is less than the ReorderLevel. This column should output true if the product is on backorder, and false otherwise
+5. Filter the table to only have products on backorder
