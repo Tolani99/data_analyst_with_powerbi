@@ -1,0 +1,6 @@
+1. Load the workbook 4_2_rename_steps.pbix from the Exercises folder on the
+   Desktop then open the Power Query Editor
+2. Open the Advanced Editor, then click on Display Options and select "Display Line Numbers" and "Enable Word Wrap"
+3. Write this comment at the top of your query after the let statement in the Advanced Editor //This query is used to calculate safety stock for each product
+4. Rename the Added Custom1 query to Added IsFreshProduct
+5. Since we are changing Added Custom1 to Added IsFreshProduct, make sure to change any instance of Added Custom1 for the new reference in the M code
