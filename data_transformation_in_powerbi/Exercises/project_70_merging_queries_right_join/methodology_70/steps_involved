@@ -1,0 +1,5 @@
+1. Import the Orders_per_region.csv file into Power Query from the Datasets folder on the desktop
+2. Filter the "Orders per Region" query to only have customers with more than one order in a particular region
+3. Filter the ReportsTo column in the Employees query to exclude null values
+4. Right join the Total Sales table with the Orders per Region table, using the CompanyName, RegionDescriptin, and Year column as the joining columns from both tables
+5. Expand the new column to include # Orders. Make sure to uncheck "Use original column Name as prefix" sort the table by # Orders in descending order
