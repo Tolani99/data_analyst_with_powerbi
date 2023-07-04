@@ -1,0 +1,6 @@
+1. Delete all steps after "Grouped Rows" in the Applid Steps pane in the Power Query Editor
+2. Change the aggregation method for the TotalStock to calculate the average instead of the sum of the advanced editor, also, change the name of the TotalStock column to AverageStock
+3. Click Done once the above changes have been applied
+4. Expand the Grouped column, selecting "ProductID", "ProductName" and "UnitsInStock". Make sure to uncheck "Use original column name as prefix"
+5. Add a custom column called StockPercentDeviation that calculates the ratio between each product's stock and the average category stock for each product then format the column as a percentage
+6. Filter the data to only contain products with less than 10% of the average stock for their category
