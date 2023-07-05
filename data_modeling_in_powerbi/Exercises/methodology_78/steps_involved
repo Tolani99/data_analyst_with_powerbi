@@ -1,0 +1,4 @@
+1. Import manufacturing_data.csv and transform data
+2. Remove the first row
+3. Promote the new first row to become headers
+4. Changee the data type of the Year column to become a date
