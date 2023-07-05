@@ -1,0 +1,12 @@
+1. Open the workbook 4_4_zscores.pbix from the Exercises folder 
+   and open the power query
+2. Head to advanced editor and change the aggregation method of the CategoryPriceStandardDeviation column to List.StandardDeviation() which is a non-standard grouping aggregation. Once you have made the change, click Done.
+3. Expand the Grouped column, selecting "ProductID", "ProductName", "CategoryID", "UnitPrice", and "UnitsInStock".
+4. Add a custom column named ProductPriceZscore which calculates the Z Score using the following formula: ([UnitPrice] - [CategoryAveragePrice])/[CategoryPriceStandardDeviation]
+5. Add a conditional column called ProductPriceCategory which will categorize the products based on the ProductPriceZscore column you just created.
+Use the following thresholds:
+* If ProductPriceZscore is >= 2.5 then the product will be in the Gourmet category
+* If ProductPriceZscore is between 1 and 2.5 then the product will be in the Premium category
+* If ProductPriceZscore is between 0 and 1 then the product will be in the Standard category
+* If productPriceZscore is < 0 then the product will be in the "Value" category
+6. Group by the ProductPriceCategory you just created. Then add a sum aggregation called TotalStack where Column is "UnitsinStock"
