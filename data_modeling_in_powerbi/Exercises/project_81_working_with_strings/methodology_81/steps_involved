@@ -1,0 +1,4 @@
+1. Return to PowerQuery and change the casting of the Meaning of NAICS code column to "Capitalize Each Word". Then change the casing of the Geographic Area Name column to "UPPERCASE"
+2. On the 2017 NAICS code column, add a prefix of "MANU-" before each value
+3. Apply the changes and return to the Report view
+4. Add a slicer and use 2017 NAICS code as the Field
