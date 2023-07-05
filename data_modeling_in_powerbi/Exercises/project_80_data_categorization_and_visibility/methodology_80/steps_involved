@@ -1,0 +1,5 @@
+1. If you're not already in the Data view, go there and change the data category for the Geographic Area Name to "State or Province"
+2. Select the (empty) 2017 NAICS Footnote column and hide it from the report view
+3. Navigate to the Report view and add a Map visual to the current page. Add Geographic Area Name as the Location and Number of employees as the Size
+   Change the aggregation of Number of employees to "Average"
+
