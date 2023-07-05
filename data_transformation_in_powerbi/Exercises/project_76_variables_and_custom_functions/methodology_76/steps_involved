@@ -1,0 +1,13 @@
+1. Open the Advanced Editor and then add the following line of code right above the Source = ... code block:
+FreshProducts = {"Seafood", "Meat/Poultry", "Produce", "Dairy Products"},
+This stores a variable in your query called FreshProducts which contains a list of product categories that are considered fresh
+2. Add the following block of code underneath the code you added previously:
+	isFreshProduct = (input as list) =>
+		let
+			Result = if List.ContainsAny(input, FreshProducts) then true else false
+		in
+			Result,
+This stores a local function called isFreshProduct inside your query that can be referenced in further steps in the query
+3. Navigate to the Added IsFreshProduct step and delete everything in that step after the each and add the following: isFreshProduct({[CategoryName]})),
+Make sure to include the curly braces and the comma at the end
+4. Change the Calculated SafetyStock argument to obtain stock based on ReorderLevel with multiple of 3 for non-fresh Products, and then click Done
