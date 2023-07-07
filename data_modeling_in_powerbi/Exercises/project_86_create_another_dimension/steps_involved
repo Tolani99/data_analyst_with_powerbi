@@ -1,0 +1,6 @@
+1. Import the file named EstablishmentAge.csv from the Datasets folder on the desktop
+2. Go to Power Query and name the table "Age"
+3. Remove duplicate values from the dataset and then close Power Query
+4. Navigate the Model view and connect the Age dimension to the Establishment Survey fact by Age code if this is not the case yet
+5. Return to the Report view and add a second slicer using Establishment Age from the new Age dimension
+
