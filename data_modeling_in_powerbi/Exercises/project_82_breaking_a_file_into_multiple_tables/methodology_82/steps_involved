@@ -1,0 +1,4 @@
+1. Open the Bi Desktop file named 2_1_split_table.pbix in the Exercises folder on the Desktop and go Power Query
+2. Duplicate the Manufacturing Data table and rename it to NAICS
+3. In this new NAICS table, keep only 2017 NAICS code and Meaning of NAICS code, Remove the duplicate codes from 2017 NAICS code
+
