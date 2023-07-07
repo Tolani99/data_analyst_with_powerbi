@@ -1,0 +1,7 @@
+1. Open the Power Bi Desktop file named 3_1_split_dataset.pbix from the Exercises folder on the desktop and go power query
+2. Duplicate the Business "Establishment Survey" query and rename it to "industry"
+3. Keep only the following columns in the "industry" table: NAICS code, NAICS Code Description, Industry group code, Industry group, Subsector Code, and Sector
+4. Remove duplicate values from the dataset
+5. Return to the "Establishment Survey" query and remove the columns you just added to "industry": NAICS Code Description, Industry group code, Industry group, Subsector Code, Subsector, Sector Code, and Sector. Make sure to keep NAICS code! This column is the key we'll use to connect the dimension to the fact table. Exit Power Query
+6. Go to model view and verify there's a relationship between "industry" and "Establishment Survey"
+7. Go to the Report view and create a new clustered bar with the subsector column from the dimension table as the Axis and Average Number of employees from the fact table as the Values.
