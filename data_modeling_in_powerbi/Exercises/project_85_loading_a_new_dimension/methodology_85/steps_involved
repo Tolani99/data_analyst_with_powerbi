@@ -1,0 +1,4 @@
+1. Import the file named Time.txt from the Datasets folder on the desktop
+2. Go to the Model view and verify that there is a relationship between "Time" and "Establishment Survey" tables, defined by the Year column.
+3. Return to the Report view and add a new slicer visual, slicing on Decade from the Time dimension
+4. Adjust the size of the slicer in the page until you see the options and change the slicer to be a list of values rather than a range
