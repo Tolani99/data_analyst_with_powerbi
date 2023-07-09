@@ -1,0 +1,6 @@
+1. go to Power Query and duplicate the industry query four times
+2. Rename the Duplicated queries to "NAICS code", "Industry group", "Subsector" and "sector
+3. Knowing the hierarchy as Sector > Subsector > Industry group > NAICS Code Description for each table keep only the code and text description coluns corresponding to that level of the heirarchy and also keep the code of the next level in hte hierarchy if there is one. Make sure to remove duplicates
+4. Close Power Query and go to the model view. Delete automatically created relationships.
+5. Create a relationship between "NAICS code" and "Establishment Survey"tables using NAICS code.
+6. Check that the other snowflakes dimensions are connected to each other in hte right order. If there are dotted-lines relationship, double click on the relationship to go into the Properties
