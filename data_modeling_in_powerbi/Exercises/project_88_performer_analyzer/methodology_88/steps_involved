@@ -1,0 +1,6 @@
+1. Go to the Report view and create a new page named "Comparison"
+2. Create a line chart with the decade on the x-axis, the average number of employees on the y-axis, and the subsector(from the star dimension "industry") on the legend
+3. Create another line chart with the decade on the x-axis, the average number of employees on the y-axis and the subsector(from the snowflake dimension "Subsector") on the legend
+4. Change the title of the first line chart to "Star schema" Change the title of the second line chart to "Snowflake schema"
+5. Open the Performance analyzer and start recording to begin performance analyzis, Refresh all visuals on the page. Do this several times to see f there is a consensus on whether the star or snowflakes schema is faster in this case.
+6. Looks like there isn't a big difference in speed between both approaches for our relatively small dataset, dig a level deeper and go take a look at what the drivers of performance are for each visual.
