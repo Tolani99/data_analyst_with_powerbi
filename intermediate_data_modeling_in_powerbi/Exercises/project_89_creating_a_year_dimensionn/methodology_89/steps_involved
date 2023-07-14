@@ -1,0 +1,13 @@
+1. Open 1_1_create_year_dimension.pbix from the Exercises folder on the Desktop
+2. Navigate to the Data view and create a new table called Year
+3. Complete the following DAX syntax to create the Year table, which
+   should contain a asingle column Year, with years ranging from 1961 to today's year
+"___= // name of the table
+ DISTINCT ( // only keeps unique rows
+	SELECTCOLUMNS( // returns a table and creates new columns based on expression
+		____( DATE ( ____), ____), // creates date range between 1961-01-01 and today
+		"____", YEAR([____]) // creates "Year" column, extracting year only
+	)
+)
+4. Navigate to the Model view, use the Manage relationship feature to add a relationship between Year of Business Establishment by Age and the Newly created Year dimension. Make sure that the cardinalty is such that many rows in Business Establishment by Age may correspond with one value in Year. 
+5. Navigate to the Report view. Add a card visual, with Fields set to Number of firms from the Business Establishment by Age table. Add a year filter(from the Year dimension) and set to 1983 only.
